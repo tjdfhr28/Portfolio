@@ -1,0 +1,229 @@
+@charset "utf-8";
+*{box-sizing:border-box}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+a{text-decoration:none;color:#000}
+img{vertical-align:top;border:0}
+body.fixed{overflow-y:hidden}
+.wrapper{margin-left:0;transition:margin-left .4s}
+.wrapper.active{margin-left:15em}
+section .title h3{font-size:1.75em;opacity:0;transition:opacity .8s}
+section .title p{margin-top:1.5em;font-size:.938em;color:#999899;opacity:0;transition:opacity .6s}
+section .title h3,section .title p{opacity:1}
+.clearfix::before,.clearfix::after{content:"";display:block}
+.clearfix::after{clear:both}
+.btn_top{display:none;position:fixed;right:1.25em;bottom:1.75em;z-index:1001;width:3.125em;height:3.125em;overflow:hidden;text-indent:-9999px;background:#603d99 url(../images/btn_top.png) no-repeat center center;cursor:pointer;border-radius:50%}
+
+#header{height:45em;background-color:#f2f2f2;font-size:1em;background:url(../images/coner-about-bg.jpg) no-repeat center center;background-size:cover;background-position:50% 25%}
+#header .inner.fixed{background-color:rgba(96,61,153,.8)}
+#header .inner .top{position:fixed;left:0;top:0;width:100%;height:5.375em;z-index:9;font-size:1em;background-color:rgba(0,0,0,0);transition:background-color .4s}
+#header .inner .top.fixed{background-color:rgba(96,61,153,.8)}
+#header .inner .top .menu{margin:0 auto;max-width:940px;height:4.375em;text-align:center}
+#header .inner .top .menu.fixed{background-color:rgba(96,61,153,.8)}
+#header .inner .main_title{position:absolute;top:9em;left:0;width:100%;text-align:center}
+#header .inner .main_title .title{font-size:3em;font-weight:300;color:#fff;opacity:0;transform:translateY(50px);transition:opacity 0.4s,transform .8s}
+#header .inner .main_title p{display:block;margin-top:1.42em;font-size:3em;font-weight:600;color:#fff;opacity:0;transform:translateY(50px);transition:opacity 0.4s,transform .8s;transition-delay:.4s}
+#header .inner .main_title a{display:inline-block;margin-top:3.813em;padding:1em 5em;border:1px solid #fff;border-radius:.313em;font-weight:600;color:#fff;opacity:0;transform:translateY(50px);transition:opacity 0.4s,transform .8s;transition-delay:.8s}
+#header .inner .main_title a:hover,#header .inner .main_title a:focus{background-color:#603d99;border:none}
+#header .inner .main_title.active .title,#header .inner .main_title.active p,#header .inner .main_title.active a{opacity:1;transform:translateY(0)}
+
+#logo{float:left;margin-top:.625em}
+#logo a{display:block;padding:0 1.25em}
+
+#gnb{float:left;margin-top:1.938em;margin-left:1.375em}
+#gnb ul li{display:inline-block;margin-left:.5em;font-weight:600}
+#gnb ul li a{display:block;padding:.5em 1em;color:#fff;transition:color .3s}
+#gnb ul li a::after{content:"";display:none;margin-top:1.688em;border-bottom:2px solid #9154A1}
+#gnb ul li a:hover,#gnb ul li a:focus{color:#9154A1}
+#gnb ul li a:hover::after,#gnb ul li a:focus::after{display:block;color:#9154A1}
+
+.side_menu{position:fixed;right:-15rem;top:0;z-index:1000;padding:3.25em 0 0 1.125em;width:15rem;height:100%;background-color:#fff;transition:left .4s;box-sizing:border-box;transition:right .4s}
+.side_menu.active{right:0}
+.side_menu ul li a{display:block;line-height:4;border-bottom:1px solid #eaeaea;font-size:1.2em;font-weight:600;font-family:'Open Sans',sans-serif;color:#603D99}
+
+.tab{display:none;position:fixed;right:.625em;top:.625em;width:2em;height:2em;overflow:hidden;text-indent:-9999px;background:url(../images/ico_tab_open.png) no-repeat 0 0;background-size:cover}
+.tab.open{background-position:-2.5em 0}
+.tab.active{right:15.625em;width:1.563em;height:1.563em;z-index:1000;background:url(../images/ico_tab_close.png) no-repeat 0 0}
+
+.dim{display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:999;background-color:rgba(0,0,0,.6)}
+.dim.active{display:block}
+
+@media only screen and (max-width:720px) {
+#header{font-size:.875em;width:100%}
+#gnb{display:none}
+.tab{display:block;z-index:100}
+}
+
+@media only screen and (max-width:460px) {
+#header{font-size:.625em;width:100%;height:68.75em}
+#header .inner .main_title{top:20em}
+#header .inner .main_title a{padding:2em 6em}
+.tab{right:1.25em}
+.btn_top{right:1em}
+.controller{display:none}
+section .title h3{font-size:1.75em}
+section .title p{font-size:.75em}
+}
+
+#pag1{padding:6.25em 0 4.375em;font-size:1em;text-align:center;background:url(../images/coner-background-repeat.gif) 50% 50% repeat}
+#pag1 .inner{margin:0 auto;max-width:940px}
+#pag1 .banner_zone{margin-top:5.375em}
+#pag1 .banner_zone ul li{float:left;margin-left:2%;width:calc((100% - 4%)/3)}
+#pag1 .banner_zone ul li:first-child{margin-left:0}
+#pag1 .banner_zone ul li .banner_img a{display:inline-block;padding:1em;border-radius:50%;border:solid 2px #9154A1;overflow:hidden}
+#pag1 .banner_zone ul li .banner_img a img{max-width:100%}
+#pag1 .banner_zone ul li .desc{margin-top:2.188em}
+#pag1 .banner_zone ul li .desc span{font-weight:600}
+#pag1 .banner_zone ul li .desc p{margin-top:2em;font-size:.938em;color:#999899;line-height:1.6}
+
+@media only screen and (max-width:720px) {
+#pag1{width:100%}
+}
+
+@media only screen and (max-width:460px) {
+#pag1{width:100%}
+#pag1 .banner_zone ul li{float:none;margin:0 auto;margin-top:3em}
+#pag1 .banner_zone ul li:first-child{margin-left:auto}
+#pag1 .banner_zone ul li .desc p{font-size:.75em}
+}
+
+#pag2{padding:6.25em 0 4.375em;font-size:1em;background-color:#F7F7F7;text-align:center}
+#pag2 .inner{margin:0 auto;max-width:940px}
+#pag2 .inner .content{margin-top:4.35em}
+#pag2 .inner .content ul li{position:relative;float:left;margin-left:9%;margin-bottom:3.125em;width:calc((94% - 18%)/3);overflow:hidden}
+#pag2 .inner .content ul li:nth-child(3n+1){margin-left:0}
+#pag2 .inner .content ul li a{display:block}
+#pag2 .inner .content ul li a::after{content:"";display:block;position:absolute;left:0;top:0;z-index:10;width:100%;height:100%;opacity:0;background-color:rgba(252,207,255,.3);transition:opacity:0.3s}
+#pag2 .inner .content ul li a:hover::after,#pag2 .inner .content ul li a:hover::after{opacity:1}
+#pag2 .inner .content ul li a .content_img{overflow:hidden}
+#pag2 .inner .content ul li a .content_img img{width:100%;transform:scale(1);transition:transform .3s}
+#pag2 .inner .content ul li a:hover .content_img img,#pag2 .inner .content ul li a:focus .content_img img{transform:scale(1.05)}
+#pag2 .inner .content ul li a .desc{padding:1.5em 0;background-color:#fff}
+#pag2 .inner .content ul li a .desc span{line-height:1.75;font-weight:700}
+#pag2 .inner .content ul li a .desc p{line-height:1.75;font-size:.938em;color:#999899}
+
+@media only screen and (max-width:720px) {
+#pag2{width:100%}
+#pag2 .inner .content ul li{width:calc((100% - 2%)/2)}
+#pag2 .inner .content ul li:nth-child(2n+1){margin-left:0}
+#pag2 .inner .content ul li:nth-child(4n){margin-left:2%}
+}
+
+@media only screen and (max-width:460px) {
+#pag2{width:100%}
+#pag2 .inner .content ul li{margin-left:25%;width:calc((100% - 1%)/2)}
+#pag2 .inner .content ul li:nth-child(2n+1){margin-left:25%}
+#pag2 .inner .content ul li:nth-child(4n){margin-left:25%}
+#pag2 .inner .content ul li a .desc p{font-size:.875em}
+}
+
+#pag3{padding:8.125em 0 15.313em;font-size:1em;background:url(../images/coner-recruit-bg.jpg) no-repeat;background-size:cover}
+#pag3 .inner{margin:0 auto;max-width:940px;text-align:center}
+#pag3 .inner .title h3{color:#fff}
+#pag3 .content{margin-top:3.875em}
+#pag3 .content ul li{position:relative}
+#pag3 .content ul li .content_img{margin-top:5.938em}
+#pag3 .content ul li .content_img a{display:inline-block;border-radius:50%;border:solid 7px #F0F0F0;overflow:hidden}
+#pag3 .content ul li .content_img a::after{border:1px solid}
+#pag3 .content ul li .desc_lfet{position:absolute;top:0;left:0;width:calc(50% - 8em);text-align:center}
+#pag3 .content ul li .desc_lfet span{font-size:3.125em;font-weight:600;color:#fff}
+#pag3 .content ul li .desc_lfet p{font-size:1.875em;line-height:1.5;color:#fff}
+#pag3 .content ul li .desc_right{position:absolute;top:0;right:0;text-align:center;width:calc(50% - 8em)}
+#pag3 .content ul li .desc_right span{font-size:3.125em;font-weight:600;color:#fff}
+#pag3 .content ul li .desc_right p{font-size:1.875em;line-height:1.5;color:#fff}
+
+@media only screen and (max-width:720px) {
+#pag3{width:100%}
+#pag3 .content{text-align:left}
+#pag3 .content ul li .desc_lfet{margin-left:11.5em;padding-left:1em;width:calc(100% - 16em);text-align:left}
+#pag3 .content ul li .desc_right{padding-left:2em;width:calc(100% - 11em);text-align:left}
+}
+
+@media only screen and (max-width:460px) {
+#pag3{width:100%}
+#pag3 .content ul li .desc_lfet{margin-top:3em;width:calc(100% - 13em);font-size:.675em}
+#pag3 .content ul li .desc_right{margin-top:3em;width:calc(100% - 11em);font-size:.675em}
+#pag3 .content ul li .desc_lfet p{display:none}
+#pag3 .content ul li .desc_right p{display:none}
+}
+
+#pag4{padding:8.125em 0 7.75em;font-size:1em;background:url(../images/coner-background-repeat.gif) 50% 50% repeat}
+#pag4 .inner{margin:0 auto;max-width:940px;text-align:center}
+#pag4 .inner .banner_zone{margin-top:5.313em}
+#pag4 .inner .banner_zone ul li{float:left;margin-left:10%;width:calc((100% - 20%)/3)}
+#pag4 .inner .banner_zone ul li:nth-child(3n+1){margin-left:0}
+#pag4 .inner .banner_zone ul li a{display:block}
+#pag4 .inner .banner_zone ul li a .banner_img{border-radius:50%;border:solid 7px #a04444;overflow:hidden}
+#pag4 .inner .banner_zone ul li a .desc{margin-top:1.375em}
+#pag4 .inner .banner_zone ul li a .desc span{font-size:1.2em;font-weight:600}
+#pag4 .inner .banner_zone ul li a .desc p{margin-top:1.375em;line-height:1.8;font-size:.938em;color:#999899}
+
+@media only screen and (max-width:720px) {
+#pag4{width:100%;font-size:.875em}
+#pag4 .inner .banner_zone ul li{float:none;margin:0 auto;width:36%}
+#pag4 .inner .banner_zone ul li:nth-child(3n+1){margin-left:auto}
+#pag4 .inner .banner_zone ul li a .banner_img{margin-top:3.125em}
+}
+
+@media only screen and (max-width:460px) {
+#pag4{width:100%;font-size:.875em}
+#pag4 .inner .banner_zone ul li{float:none;margin:0 auto;width:55%}
+}
+
+#pag5{height:42.188em;padding:7.5em 0 5.25em;background:url(../images/coner-request.jpg) no-repeat center center;font-size:1em}
+#pag5 .inner{margin:0 auto;max-width:940px;text-align:center}
+#pag5 .inner .title h3{color:#fff}
+#pag5 .inner .title p{color:#e7e7e7}
+#pag5 .inner .input_zone{position:relative;margin-top:5em}
+#pag5 .inner .input_zone form .left_cont{float:left;width:calc(100% / 2)}
+#pag5 .inner .input_zone form .left_cont input{margin-top:1.75em;padding-left:1.25em;padding-right:19.125em;border-radius:.313em;border:none;line-height:3.5;font-size:.938em;font-weight:600;font-family:'Open Sans',sans-serif}
+#pag5 .inner .input_zone form .left_cont input:nth-child(3n+1){margin-top:0;padding-right:19.125em}
+#pag5 .inner .input_zone form .right_cont{float:right}
+#pag5 .inner .input_zone form .right_cont textarea{padding-left:1em;padding-top:.875em;border-radius:.313em;border:none;font-size:.938em;font-weight:600;font-family:'Open Sans',sans-serif}
+#pag5 .inner .input_zone form .button{position:absolute;top:14em;width:100%;text-align:center}
+#pag5 .inner .input_zone form .button input{display:inline-block;margin-top:3.25em;padding:1.4em 4em;background-color:#603D99;border-radius:.313em;border:none;font-size:.938em;font-weight:600;font-family:'Open Sans',sans-serif;color:#fff}
+
+@media only screen and (max-width:720px) {
+#pag5{height:56.25em}
+#pag5 .inner .input_zone form .left_cont{float:none;width:auto}
+#pag5 .inner .input_zone form .right_cont{float:none;margin-top:1.75em}
+#pag5 .inner .input_zone form .left_cont input{padding-right:19.125em}
+#pag5 .inner .input_zone form .right_cont textarea{padding-right:3.625em}
+#pag5 .inner .input_zone form .button{position:unset}
+}
+
+@media only screen and (max-width:460px) {
+#pag5{width:100%;height:61.25em;font-size:.875em}
+#pag5 .inner .input_zone form .left_cont{float:none;width:auto}
+#pag5 .inner .input_zone form .left_cont input:nth-child(3n+1){padding-right:13em}
+#pag5 .inner .input_zone form .left_cont input{margin-top:.75em;padding-right:13em;line-height:4}
+#pag5 .inner .input_zone form .right_cont{margin-top:.75em}
+#pag5 .inner .input_zone form .right_cont textarea{width:341px;height:233px;padding-right:0;line-height:2}
+#pag5 .inner .input_zone form .button input{margin-top:1.25em}
+}
+
+#footer{margin:0 auto;padding:1.875em 0;max-width:940px}
+#footer .copyright{float:left;padding-bottom:1.825em}
+#footer .copyright p{font-size:.75em;font-weight:600;line-height:2}
+#footer .copyright p a{padding:0 1em}
+#footer .sns{float:right}
+#footer .sns ul li{display:inline-block}
+#footer .sns ul li a{display:block;width:2em;height:2em;border-radius:2em;background-color:#222122;color:#fff;text-align:center;line-height:2}
+
+.controller{position:fixed;right:1.875em;top:50%;margin:0;margin-top:-5.75em;padding:0;width:.5em;z-index:100;list-style:none}
+.controller li{margin-top:1.25em;width:.875em;height:.875em}
+.controller li:first-child{margin-top:0}
+.controller li a{display:block;width:.5em;height:.5em;text-indent:-9999px;background-color:rgba(145,84,161,0.4);border-radius:50%}
+.controller li.on a{background-color:#9154a1}
+
+@media only screen and (max-width:720px) {
+#footer{font-size:.875em}
+#footer .copyright{padding-bottom:0}
+#footer .sns{float:left;margin-bottom:2em}
+}
+@media only screen and (max-width:460px) {
+#footer{text-align:center;font-size:.875em}
+#footer .copyright{margin:0 1em}
+#footer .copyright p{line-height:3}
+#footer .sns{float:none}
+}

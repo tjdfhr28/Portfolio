@@ -1,0 +1,116 @@
+#header{height:100vh}
+#header .header_inner{position:absolute;left:0;top:0;z-index:1000;width:100%;min-width:1800px;height:80px;border-bottom:1px solid rgba(255,255,255,.2)}
+#header.fixed .header_inner{position:fixed;top:-80px;background-color:rgba(255,255,255,.1);border-bottom:1px solid rgba(255,255,255,.4)}
+#header .header_inner .logo{float:left;margin-left:4%;margin-top:24px}
+#header .header_inner .logo a{display:block;width:160px}
+#header .header_inner .logo a img{max-width:100%}
+#header .header_inner .menu{float:left;margin-left:200px}
+#header .header_inner .right{float:right;margin-right:4%}
+#header .header_inner .right .language{float:left;background-color:#334a51}
+#header .header_inner .right .language ul > li{position:relative}
+#header .header_inner .right .language ul > li > a{display:block;padding:0 80px 0 60px;line-height:80px;font-size:14px;font-weight:400;background:url(../images/bg_iconat.png) no-repeat 100px center;background-size:10px;color:#fff}
+#header .header_inner .right .language li ul{display:none;position:absolute;left:0;width:100%;background-color:#fff}
+#header .header_inner .right .language li li a{display:block;line-height:60px;font-size:14px;font-weight:500;color:#555}
+#header .header_inner .right .tab{float:left}
+#header .header_inner .right .tab a{display:block;padding:0 60px 0 85px;line-height:80px;font-size:14px;font-weight:400;background:#fff url(../images/menubar.png) no-repeat 45px center;background-size:20px}
+#header .video_zone{position:relative;width:100%;min-width:1800px;height:100vh;overflow:hidden}
+#header .video_zone video{position:absolute;left:0;top:0;width:100%}
+
+#gnb > ul > li{display:inline-block;position:relative;margin:0 10px}
+#gnb > ul > li > a{display:block;padding:0 40px;line-height:80px;font-size:15px;font-weight:700;color:#fff}
+#gnb > ul > li:last-child > a{font-weight:400;color:#c4c7cd}
+#gnb li ul{display:none;position:absolute;left:-5%;padding:10px 0;width:110%;background-color:#fff;transition:background-color .3s}
+#gnb li.active ul{background-color:#fff}
+#gnb li ul::before{content:"";display:block;position:absolute;left:50%;top:0;width:8px;height:8px;background-color:#03b9d4;border-radius:4px;transform:translateY(-4px)}
+#gnb li li a{display:block;line-height:34px;text-align:center;font-size:15px;color:#555;transition:color 300ms}
+#gnb li li a:hover,#gnb li li a:focus{color:#03b9d4}
+
+#main{position:relative;min-width:1800px;width:100%;height:620px}
+#main .inner{margin:0 auto;width:1355px}
+#main .inner .desc h3{margin-top:268px;font-size:90px;font-weight:700;color:#fff}
+#main .inner .desc span{margin-top:5px;font-size:30px;color:#fff}
+#main .inner .desc p{margin-top:35px;font-size:20px;color:#fff}
+#main .inner .sns{position:absolute;left:80px;bottom:10%}
+#main .inner .sns ul li{padding-bottom:43px}
+#main .inner .sns ul li a{display:block}
+#main .inner .scroll_down{font-size:14px;color:#fff;padding-left:25px;z-index:5;position:absolute;bottom:145px;right:6.5%;display:inline-block;line-height:1;transform:rotate(270deg)}
+#main .inner .scroll_down::before{display:block;content:'';border-right:1px solid #fff;border-bottom:1px solid #fff;width:7px;height:7px;position:absolute;top:5px;left:3px;transform:rotate(135deg)}
+
+#sub2{min-width:1696px;height:900px;background-color:#EBE7E4}
+#sub2 .inner{margin:0 auto;width:1355px}
+#sub2 .inner .left{float:left;margin-top:100px}
+#sub2 .inner .left .title h2{font-size:60px;font-weight:700;font-family:'Merriweather',serif;color:#C4C7CD}
+#sub2 .inner .left .title span.sub_title{display:block;margin-top:23px;font-size:30px;font-weight:700;color:#334A51}
+#sub2 .inner .left .title span{display:block;margin-top:20px;font-size:20px;font-weight:700;color:#334A51}
+#sub2 .inner .left .title p{margin-top:35px;font-size:15px;font-weight:700;color:#334A51}
+#sub2 .inner .left .desc .label{margin-top:104px;font-size:20px;font-weight:700;color:#334A51}
+#sub2 .inner .left .desc .icons{margin-top:43px}
+#sub2 .inner .left .desc .icons ul li{display:inline-block;margin-right:82px;vertical-align:middle}
+#sub2 .inner .left .desc .icons ul li img{width:100px}
+#sub2 .inner .left .desc .icons ul li span{display:block;margin-top:15px;font-size:14px;font-weight:700;color:#334A51}
+#sub2 .inner .left .desc a{display:inline-block;margin-top:74px;position:relative;top:auto;right:auto;height:54px;line-height:54px;padding-right:67px;font-size:14px;font-weight:700;font-family:'Merriweather',serif;color:#334A51}
+#sub2 .inner .left .desc a::after{content:"";display:block;position:absolute;right:0;top:0;width:54px;height:54px;border-radius:100%;background:#d5d5d5 url(../images/linkgo_allow.png)no-repeat center center}
+#sub2 .inner .right{float:right;position:relative}
+#sub2 .inner .right::after{content:"";display:block;position:absolute;right:1px;top:0;width:458px;height:900px;background-color:#95AAA3;transform:translateX(60%)}
+#sub2 .inner .right img{position:absolute;right:0;top:200px;z-index:1}
+
+#sub3{min-width:1800px;height:900px;background:url(../images/sub3_img.jpg)no-repeat center;overflow:auto;background-size:cover}
+#sub3 .inner{margin:0 auto;width:1355px}
+#sub3 .inner .desc{margin-top:180px}
+#sub3 .inner .desc .title p span.main_title{display:block;font-size:32px;color:#fff}
+#sub3 .inner .desc .title p span.sub_title{display:block;margin-top:24px;font-size:76px;font-weight:700;font-family:'Merriweather',serif;color:#fff}
+#sub3 .inner .desc .desc_p p{margin-top:73px;font-size:16px;color:#fff}
+#sub3 .inner .desc_p p .title{display:block;margin:14px 0;font-size:23px;font-family:'Merriweather',serif;color:#fff}
+#sub3 .inner .sub3_view{margin-top:100px;color:#fff}
+#sub3 .inner .sub3_view ul li{display:inline-block;margin:0 10px 10px 0;padding:13px 23px 14px;min-width:9%;border:1px solid #fff;border-radius:100px;text-align:left}
+#sub3 .inner .sub3_view ul li a{display:block;position:relative;padding-right:40px;color:#fff}
+#sub3 .inner .sub3_view ul li a::after{display:block;content:'';width:25px;height:12px;position:absolute;top:50%;right:0;margin-top:-6px;background:url(../images/linkgo_allow_w.png)}
+
+#sub4{min-width:1800px;height:900px;background-color:#F5F5F6;overflow:auto}
+#sub4 .inner{margin:0 auto;width:1355px}
+#sub4 .inner .news_zone{float:left;margin-top:112px}
+#sub4 .inner .news_zone .news span{font-size:32px;font-weight:700;color:#334A51}
+#sub4 .inner .news_zone .title{margin-top:51px}
+#sub4 .inner .news_zone .title span{font-size:20px;font-weight:700;color:#334A51}
+#sub4 .inner .news_zone .title a{display:inline-block;position:relative;top:auto;left:70.5%;height:54px;line-height:54px;padding-right:67px;font-size:14px;font-weight:700;font-family:'Merriweather',serif;color:#334A51}
+#sub4 .inner .news_zone .title a::after{content:"";display:block;position:absolute;right:0;top:0;width:54px;height:54px;border-radius:100%;background:#d5d5d5 url(../images/linkgo_allow.png)no-repeat center center}
+#sub4 .inner .news_zone .desc{float:left;margin-top:30px}
+#sub4 .inner .news_zone .desc ul li{display:inline-block;margin-right:28px}
+#sub4 .inner .news_zone .desc ul li a{display:block}
+#sub4 .inner .news_zone .desc ul li a span{display:block;margin-top:27px;font-style:21px;font-weight:700;color:#334A51}
+#sub4 .inner .news_zone .desc ul li a p{margin-top:17px;font-size:14px;color:#334A51}
+#sub4 .inner .notice_zone{float:left;margin-top:163px}
+#sub4 .inner .notice_zone .notice{position:relative;margin-left:96px}
+#sub4 .inner .notice_zone .notice::before{content:"";display:block;position:absolute;left:-50px;top:0;width:0;height:350px;border:dashed 1px #c3bfbf;-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%)}
+#sub4 .inner .notice_zone .notice .title{margin-top:51px}
+#sub4 .inner .notice_zone .notice .title span{font-size:20px;font-weight:700;color:#334A51}
+#sub4 .inner .notice_zone .notice .title a{display:inline-block;position:relative;top:auto;left:60.8%;height:54px;line-height:54px;padding-right:67px;font-size:14px;font-weight:700;font-family:'Merriweather',serif;color:#334A51}
+#sub4 .inner .notice_zone .notice .title a::after{content:"";display:block;position:absolute;right:0;top:0;width:54px;height:54px;border-radius:100%;background:#d5d5d5 url(../images/linkgo_allow.png)no-repeat center center}
+#sub4 .inner .notice_zone .notice .desc{margin-top:32px}
+#sub4 .inner .notice_zone .notice .desc span{font-size:21px;font-weight:700;color:#955446}
+#sub4 .inner .notice_zone .notice .desc p{margin-top:13px;font-size:14px;font-weight:700;color:#334A51}
+#sub4 .inner .notice_zone .notice .pagination{margin-top:27px}
+#sub4 .inner .notice_zone .notice .pagination a{display:inline-block;position:relative;margin-right:5px;width:30px;height:30px;border:1px solid #933242;border-radius:100%}
+#sub4 .inner .notice_zone .notice .pagination a::after{content:'';display:block;position:absolute;top:50%;left:50%;margin:-2.5px 0 0 -2.5px;width:5px;height:5px;background:#444748}
+#sub4 .inner .banner_zone{float:left;margin-top:120px}
+#sub4 .inner .banner_zone ul li{display:inline-block}
+#sub4 .inner .banner_zone ul li:first-child{margin-right:25px}
+#sub4 .inner .banner_zone ul li a{display:block}
+#sub4 .inner .banner_zone ul li a img{width:662px}
+
+#footer{min-width:1800px;height:280px}
+#footer .inner{margin:0 auto;width:1355px}
+#footer .inner .logo{float:left;margin-top:100px}
+#footer .inner .logo h3 a{display:block;padding:0 10px}
+#footer .inner .logo h3 a img{width:200px}
+#footer .inner .copyright{float:left;margin-right:236px}
+#footer .inner .copyright span{display:block;font-size:14px}
+#footer .inner .copyright span.call{margin-top:100px}
+#footer .inner .copyright span.tel{margin-top:6px}
+#footer .inner .copyright span.copy{margin-top:8px;font-family:'Merriweather',serif}
+#footer .inner .right{float:right;margin-top:70px;width:342px}
+#footer .inner .right .sns span{float:left}
+#footer .inner .right .sns ul li{display:inline-block;margin-left:19px}
+#footer .inner .right .sns ul li a{display:block}
+#footer .inner .right .Verification{margin-top:23px}
+#footer .inner .right .Verification a{display:block}
